@@ -1,15 +1,27 @@
-# Ansh & Riley Full-Stack Template
+# 25thstreetband
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+Official website for the 25th Street Band - A global crossover jazz collaboration project
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+## About
 
-You can also edit the Path's prompt template to be whatever you like!
+The 25th Street Band is a global crossover jazz collaboration project, based in London UK and featuring guest artists from around the world.
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
-- React with Next.js 14 App Router
-- TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+## Technology
+
+Built with:
+- Next.js
+- React
+- Tailwind CSS
+- TypeScript
+
+## Development
+
+To run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
