@@ -19,24 +19,16 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
-        {/* NYC Skyline Video Background */}
+        {/* NYC Background Image */}
         <div className="absolute inset-0 w-full h-full">
-          <video
-            autoPlay
-            loop={false}
-            playsInline
-            crossOrigin="anonymous"
-            onTimeUpdate={(e) => {
-              const video = e.target as HTMLVideoElement;
-              // If we're within 5 seconds of the end, reset to beginning
-              if (video.duration - video.currentTime <= 5) {
-                video.currentTime = 0;
-              }
-            }}
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/timelapse.mp4" type="video/mp4" />
-          </video>
+          <Image
+            src="/new york dark.jpg"
+            alt="New York City Dark"
+            fill
+            style={{ objectFit: 'cover' }}
+            className="absolute inset-0 w-full h-full"
+            priority
+          />
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A192F]/50 via-transparent to-[#0A192F]" />
         </div>
