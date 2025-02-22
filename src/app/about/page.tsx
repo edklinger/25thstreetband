@@ -2,7 +2,9 @@
 
 import Navigation from '../components/Navigation'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import { IconType } from 'react-icons'
 import Image from 'next/image'
+import React from 'react'
 
 interface MilestoneProps {
   year: string
@@ -124,7 +126,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-black/30 rounded-xl p-8">
               <div className="text-orange-400 mx-auto mb-4 flex justify-center">
-                <div><FaEnvelope size={32} /></div>
+                {React.createElement(FaEnvelope, { size: 32 })}
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
               <a href="mailto:booking@25thstreetband.com" className="text-gray-300 hover:text-white transition-colors">
@@ -133,7 +135,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-black/30 rounded-xl p-8">
               <div className="text-orange-400 mx-auto mb-4 flex justify-center">
-                <div><FaPhone size={32} /></div>
+                {React.createElement(FaPhone, { size: 32 })}
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
               <a href="tel:+1234567890" className="text-gray-300 hover:text-white transition-colors">
