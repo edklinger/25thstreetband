@@ -136,7 +136,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2 px-8 py-3 bg-gradient-to-r from-[#FF0000] to-[#CC0000] rounded-xl text-white font-medium hover:from-[#CC0000] hover:to-[#FF0000] transition-all transform hover:scale-[1.02] shadow-lg w-full mt-auto"
                   >
-                    <FaYoutube className="text-2xl" />
+                    {FaYoutube({ className: "text-2xl" })}
                     <span>Subscribe on YouTube</span>
                   </a>
                 </div>
@@ -167,7 +167,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2 px-8 py-3 bg-gradient-to-r from-[#1DB954] to-[#169C46] rounded-xl text-white font-medium hover:from-[#169C46] hover:to-[#1DB954] transition-all transform hover:scale-[1.02] shadow-lg w-full mt-auto"
                   >
-                    <FaSpotify className="text-2xl" />
+                    {FaSpotify({ className: "text-2xl" })}
                     <span>Follow on Spotify</span>
                   </a>
                 </div>
@@ -620,42 +620,43 @@ export default function Home() {
           </h2>
           <div className="flex flex-col space-y-8">
             <div className="flex gap-8">
-              <a href="https://www.youtube.com/@25thstreetband" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.youtube.com/@25thstreetband"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-4xl text-[#95A5A6] hover:text-[#FF4500] transition-all transform hover:scale-110 drop-shadow-[0_0_8px_rgba(255,69,0,0)]"
               >
-                <FaYoutube />
+                {FaYoutube({})}
               </a>
-              <a 
-                href="https://open.spotify.com/artist/5ZOSFruOF37CZzX6iQi9tU" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://open.spotify.com/artist/5ZOSFruOF37CZzX6iQi9tU"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-4xl text-[#95A5A6] hover:text-[#FF4500] transition-all transform hover:scale-110"
               >
-                <FaSpotify />
+                {FaSpotify({})}
               </a>
-              <a 
-                href="https://instagram.com/25thstreetband" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://instagram.com/25thstreetband"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-4xl text-[#95A5A6] hover:text-[#FF4500] transition-all transform hover:scale-110"
               >
-                <FaInstagram />
+                {FaInstagram({})}
               </a>
-              <a 
-                href="https://www.facebook.com/profile.php?id=100063657336530" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.facebook.com/profile.php?id=100063657336530"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-4xl text-[#95A5A6] hover:text-[#FF4500] transition-all transform hover:scale-110"
               >
-                <FaFacebook />
+                {FaFacebook({})}
               </a>
             </div>
-            <a 
-              href="mailto:info@25thstreetband.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="mailto:info@25thstreetband.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors font-inter"
             >
               info@25thstreetband.com

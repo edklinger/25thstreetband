@@ -156,7 +156,7 @@ export default function GalleryPage() {
                     className="group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <FaPlay className="w-12 h-12 text-white" />
+                    {FaPlay({ className: "w-12 h-12 text-white" })}
                   </div>
                 </div>
                 <h3 className="text-white font-medium mt-4">{video.title}</h3>
@@ -173,7 +173,7 @@ export default function GalleryPage() {
             onClick={() => setSelectedVideo(null)}
             className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors"
           >
-            <FaTimes className="w-8 h-8" />
+            {FaTimes({ className: "w-8 h-8" })}
           </button>
           <div className="w-full max-w-4xl aspect-video">
             <iframe
