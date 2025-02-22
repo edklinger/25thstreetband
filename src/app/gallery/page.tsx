@@ -116,22 +116,28 @@ export default function GalleryPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {filteredPhotos.map((photo, index) => (
-              <div
-                key={index}
-                className="aspect-square relative group cursor-pointer"
-              >
-                <div className="absolute inset-0 rounded-lg overflow-hidden">
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    className="group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
+            <div className="aspect-square relative group cursor-pointer">
+              <div className="absolute inset-0 rounded-lg overflow-hidden">
+                <Image
+                  src="/russ klinger.jpeg"
+                  alt="Russ Klinger in the studio"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
-            ))}
+            </div>
+            <div className="aspect-square relative group cursor-pointer">
+              <div className="absolute inset-0 rounded-lg overflow-hidden">
+                <Image
+                  src="/new york dark.jpg"
+                  alt="New York City at night"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

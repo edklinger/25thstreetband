@@ -28,8 +28,8 @@ export default function MusicPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden relative">
               <Image
-                src="/album-cover-placeholder.jpg"
-                alt="Latest Album"
+                src="/russ klinger.jpeg"
+                alt="Latest Album - Russ Klinger"
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -106,15 +106,15 @@ export default function MusicPage() {
             <div className="group cursor-pointer">
               <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden mb-4 relative">
                 <Image
-                  src="/album1-placeholder.jpg"
-                  alt="Album 1"
+                  src="/new york dark.jpg"
+                  alt="New York Nights Album"
                   fill
                   style={{ objectFit: 'cover' }}
                   className="group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="text-lg font-bold text-white">Album Title 1</h3>
-              <p className="text-gray-300">2023</p>
+              <h3 className="text-lg font-bold text-white">New York Nights</h3>
+              <p className="text-gray-300">2024</p>
             </div>
             {/* Add more albums here */}
           </div>
