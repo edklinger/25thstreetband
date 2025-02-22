@@ -28,8 +28,8 @@ export default function MusicPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden relative">
               <Image
-                src="/russ klinger.jpeg"
-                alt="Latest Album - Russ Klinger"
+                src="/album-cover-placeholder.jpg"
+                alt="Latest Album"
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -106,15 +106,15 @@ export default function MusicPage() {
             <div className="group cursor-pointer">
               <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden mb-4 relative">
                 <Image
-                  src="/new york dark.jpg"
-                  alt="New York Nights Album"
+                  src="/album1-placeholder.jpg"
+                  alt="Album 1"
                   fill
                   style={{ objectFit: 'cover' }}
                   className="group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="text-lg font-bold text-white">New York Nights</h3>
-              <p className="text-gray-300">2024</p>
+              <h3 className="text-lg font-bold text-white">Album Title 1</h3>
+              <p className="text-gray-300">2023</p>
             </div>
             {/* Add more albums here */}
           </div>
@@ -126,14 +126,18 @@ export default function MusicPage() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8 text-white">Listen Everywhere</h2>
           <div className="flex justify-center gap-8">
-            <div className="flex items-center justify-center space-x-2 px-8 py-3 bg-gradient-to-r from-[#FF0000] to-[#CC0000] rounded-xl text-white font-medium hover:from-[#CC0000] hover:to-[#FF0000] transition-all transform hover:scale-[1.02] shadow-lg w-full mt-auto">
-              <FaYoutube className="text-2xl" />
-              <span>Watch on YouTube</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2 px-8 py-3 bg-gradient-to-r from-[#1DB954] to-[#169C46] rounded-xl text-white font-medium hover:from-[#169C46] hover:to-[#1DB954] transition-all transform hover:scale-[1.02] shadow-lg w-full mt-auto">
-              <FaSpotify className="text-2xl" />
-              <span>Listen on Spotify</span>
-            </div>
+            <a
+              href="#"
+              className="text-4xl text-[#FF0000] hover:text-[#FF0000]/80 transition-colors"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="#"
+              className="text-4xl text-[#1DB954] hover:text-[#1DB954]/80 transition-colors"
+            >
+              <FaSpotify />
+            </a>
           </div>
         </div>
       </section>

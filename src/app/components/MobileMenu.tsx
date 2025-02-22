@@ -1,8 +1,7 @@
 'use client'
 
 import { Fragment } from 'react'
-import Link from 'next/link'
-import { FaYoutube, FaSpotify, FaTimes } from 'react-icons/fa'
+import { FaYoutube, FaSpotify, FaTimes, FaInstagram, FaFacebook } from 'react-icons/fa'
 
 interface MobileMenuProps {
   isOpen: boolean
@@ -24,57 +23,71 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-black/95 backdrop-blur-lg z-50 transform transition-transform duration-300 ease-in-out">
         <div className="flex items-center justify-end p-4">
           <button
+            type="button"
+            className="text-gray-300 hover:text-white"
             onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors"
           >
-            <FaTimes className="text-2xl" />
+            <FaTimes className="h-6 w-6" />
           </button>
         </div>
 
         <div className="px-4 py-6 space-y-6">
-          <Link
-            href="/music"
-            className="block text-lg text-gray-300 hover:text-white transition-colors"
-            onClick={onClose}
-          >
-            Music
-          </Link>
-          <Link
-            href="/artists"
-            className="block text-lg text-gray-300 hover:text-white transition-colors"
-            onClick={onClose}
-          >
-            Artists
-          </Link>
-          <Link
-            href="/shows"
-            className="block text-lg text-gray-300 hover:text-white transition-colors"
-            onClick={onClose}
-          >
-            Shows
-          </Link>
-          <Link
-            href="/gallery"
-            className="block text-lg text-gray-300 hover:text-white transition-colors"
-            onClick={onClose}
-          >
-            Gallery
-          </Link>
-          <Link
-            href="/about"
-            className="block text-lg text-gray-300 hover:text-white transition-colors"
-            onClick={onClose}
+          <button
+            onClick={() => {
+              const element = document.getElementById('about');
+              const offset = 100; // Offset for the fixed header
+              const elementPosition = element?.getBoundingClientRect().top ?? 0;
+              const offsetPosition = elementPosition + window.pageYOffset - offset;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+              onClose();
+            }}
+            className="block text-lg text-gray-300 hover:text-white transition-colors w-full text-left"
           >
             About
-          </Link>
+          </button>
+          <button
+            onClick={() => {
+              const element = document.getElementById('music');
+              const offset = 100; // Offset for the fixed header
+              const elementPosition = element?.getBoundingClientRect().top ?? 0;
+              const offsetPosition = elementPosition + window.pageYOffset - offset;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+              onClose();
+            }}
+            className="block text-lg text-gray-300 hover:text-white transition-colors w-full text-left"
+          >
+            Our Music
+          </button>
+          <button
+            onClick={() => {
+              const element = document.getElementById('performers');
+              const offset = 100; // Offset for the fixed header
+              const elementPosition = element?.getBoundingClientRect().top ?? 0;
+              const offsetPosition = elementPosition + window.pageYOffset - offset;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+              onClose();
+            }}
+            className="block text-lg text-gray-300 hover:text-white transition-colors w-full text-left"
+          >
+            Performers
+          </button>
 
           <div className="pt-6 border-t border-gray-700">
-            <div className="flex justify-center gap-6">
+            <div className="flex space-x-6 px-2">
               <a
                 href="https://www.youtube.com/@25thstreetband"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl text-gray-300 hover:text-red-600 transition-colors"
+                className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
               >
                 <FaYoutube />
               </a>
@@ -82,9 +95,25 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 href="https://open.spotify.com/artist/5ZOSFruOF37CZzX6iQi9tU"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl text-gray-300 hover:text-green-500 transition-colors"
+                className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
               >
                 <FaSpotify />
+              </a>
+              <a
+                href="https://instagram.com/25thstreetband"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100063657336530"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
+              >
+                <FaFacebook />
               </a>
             </div>
           </div>

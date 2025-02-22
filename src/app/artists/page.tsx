@@ -24,28 +24,28 @@ export default function ArtistsPage() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <div className="aspect-square rounded-lg overflow-hidden mb-6 relative">
                 <Image
-                  src="/russ klinger.jpeg"
-                  alt="Russ Klinger"
+                  src="/artist1-placeholder.jpg"
+                  alt="Artist Name"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-              <h2 className="text-2xl font-bold text-orange-400 mb-4">Russ Klinger</h2>
-              <p className="text-gray-300">Band founder, writer, and producer. Russ has been at the center of the 25th Street Band project since 2014, collaborating with talented artists from around the world.</p>
+              <h2 className="text-2xl font-bold text-orange-400 mb-4">John Smith</h2>
+              <p className="text-gray-300">Lead vocals and guitar. John&apos;s powerful voice and masterful guitar work have been the cornerstone of our sound since the beginning.</p>
             </div>
 
             {/* Artist 2 */}
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <div className="aspect-square rounded-lg overflow-hidden mb-6 relative">
                 <Image
-                  src="/new york dark.jpg"
-                  alt="New York City"
+                  src="/artist2-placeholder.jpg"
+                  alt="Artist Name"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-              <h2 className="text-2xl font-bold text-orange-400 mb-4">Guest Artists</h2>
-              <p className="text-gray-300">The 25th Street Band features a rotating cast of world-class musicians, each bringing their unique style and expertise to our collaborative projects.</p>
+              <h2 className="text-2xl font-bold text-orange-400 mb-4">Sarah Johnson</h2>
+              <p className="text-gray-300">Bass guitar and backing vocals. Sarah&apos;s groove and harmonies add depth and richness to our music.</p>
             </div>
           </div>
         </div>
