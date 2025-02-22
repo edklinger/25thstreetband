@@ -70,12 +70,10 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-white">Our Story</h2>
               <div className="space-y-4 text-gray-300">
-                <p>
-                  Born in the vibrant streets of New York City, 25th Street Band emerged from a shared passion for creating music that moves people. Our journey began in 2020 when five musicians from different backgrounds came together with a common vision.
-                </p>
-                <p>
-                  Drawing inspiration from the city's rich musical heritage and diverse cultural landscape, we've crafted a sound that's uniquely our own. Our music blends elements of rock, soul, and jazz, creating an experience that resonates with audiences across generations.
-                </p>
+                <p>The 25th Street Band is a global crossover jazz collaboration project, based in London UK and featuring guest artists from around the world.</p>
+                <p>Band founders, Russ Klinger and Dave Radnor, worked with George Michael, and wrote a song for him which he performed with the band in the 1980&apos;s. More recent guests include Joey Kibble (Take 6), Mornington Lockett (sax), Hussain Jiffry (bass), Tom Brechtlein (drums) and Bill McBirnie (flute).</p>
+                <p>The 25th Street Band has released two albums, numerous singles, and has been featured and interviewed on radio globally.</p>
+                <p>Since 2014 Russ Klinger has been solo at the centre of the project, writing, playing and producing for the 25th Street Band.</p>
               </div>
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">

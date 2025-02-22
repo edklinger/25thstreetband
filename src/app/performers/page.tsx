@@ -23,7 +23,7 @@ export default function Performers() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Joel Kibble</h2>
               <div className="space-y-4 text-gray-300">
-                <p>US based, Joey is a member of Take 6. The multi-platinum selling group has earned 10 Grammy's, 10 Dove Awards and a host of other honors.</p>
+                <p>US based, Joey is a member of Take 6. The multi-platinum selling group has earned 10 Grammy&apos;s, 10 Dove Awards and a host of other honors.</p>
                 <p>The band has worked with Ray Charles, Nnenna Freelon, Gordon Goodwin, Don Henley, Whitney Houston, Al Jarreau, Quincy Jones, k.d. lang, Queen Latifah, The Manhattan Transfer, Brian McKnight, Luis Miguel, Marcus Miller, Joe Sample, Ben Tankard, CeCe Winans, and Stevie Wonder.</p>
               </div>
             </div>
@@ -32,7 +32,7 @@ export default function Performers() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Josiah Ruff</h2>
               <div className="space-y-4 text-gray-300">
-                <p>Josiah started out as a gospel singer in California. These days he's broadened out his repertoire to NeoGospelPop and lives in Miami, Florida.</p>
+                <p>Josiah started out as a gospel singer in California. These days he&apos;s broadened out his repertoire to NeoGospelPop and lives in Miami, Florida.</p>
                 <p>His lead vocals feature on several of the latest 25th Street Band tracks.</p>
                 <p>When Russ Klinger mentioned backing vocals, Josiah recommended and introduced his friend, Joel.</p>
               </div>
@@ -43,7 +43,7 @@ export default function Performers() {
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Mornington Lockett</h2>
               <div className="space-y-4 text-gray-300">
                 <p>Based in the UK, Mornington is has recorded with a wide variety of artists, including Ronnie Scott, Jim Mullen, Stan Tracey, Don Grusin, Martin Drew, Claire Martin, Arturo Sandoval, Jimmy Smith, Sarah Jane Morris and Ian Shaw and Oasis.</p>
-                <p>He has also toured with Oscar Peterson's rhythm section, drummer Martin Drew, bassist Niels Henning Ørsted Pedersen and guitarist Ulf Wakenius.</p>
+                <p>He has also toured with Oscar Peterson&apos;s rhythm section, drummer Martin Drew, bassist Niels Henning Ørsted Pedersen and guitarist Ulf Wakenius.</p>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ export default function Performers() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Hussain Jiffry</h2>
               <div className="space-y-4 text-gray-300">
-                <p>Originally from Sri Lanka and now based in L.A, Hussain's list of credits includes Tom Scott, Michael Bolton, Deneice Williams, Hellen Reddy, Petula Clark, Kenny Kirkland, David Foster, Michael McDonald, Russell Ferrante, Dione Warwick, Captain and Tennille, Chaka Khan, Crystal Gayle, Jack Jones, The Four Tops, Dave Weckl band, Gloria Gaynor, Steve Winwood, Whitney Houston, Tito Puente, Carol King, and Christopher Cross.</p>
+                <p>Originally from Sri Lanka and now based in L.A, Hussain&apos;s list of credits includes Tom Scott, Michael Bolton, Deneice Williams, Hellen Reddy, Petula Clark, Kenny Kirkland, David Foster, Michael McDonald, Russell Ferrante, Dione Warwick, Captain and Tennille, Chaka Khan, Crystal Gayle, Jack Jones, The Four Tops, Dave Weckl band, Gloria Gaynor, Steve Winwood, Whitney Houston, Tito Puente, Carol King, and Christopher Cross.</p>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ export default function Performers() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Bill McBirnie</h2>
               <div className="space-y-4 text-gray-300">
-                <p>Based in Toronto Bill has worked with Junior Mance, Irakere, Memo Acevedo and Emilie-Claire Barlow. He is also resident Jazz Flute Specialist at Sir James Galway's official web site.</p>
+                <p>Based in Toronto Bill has worked with Junior Mance, Irakere, Memo Acevedo and Emilie-Claire Barlow. He is also resident Jazz Flute Specialist at Sir James Galway&apos;s official web site.</p>
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export default function Performers() {
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Jandira Silva</h2>
               <div className="space-y-4 text-gray-300">
                 <p>Originally from Rio de Janeiro, Jandira sang with the José Cabeleira band on Portuguese TV before moving to London where she had her own Brazilian/Jazz crossover band.</p>
-                <p>Nowadays she's based in Macau.</p>
+                <p>Nowadays she&apos;s based in Macau.</p>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ export default function Performers() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-orange-400 mb-4">David Bitelli</h2>
               <div className="space-y-4 text-gray-300">
-                <p>London Based Bitelli's sax and clarinet credits include; Airto Moreira, Dudu Pukwana, Jimmy Witherspoon, Elton John, Joan Armatrading, Joe Jackson, REM, Wham, Robert Cray, Loose Tubes and many more.</p>
+                <p>London Based Bitelli&apos;s sax and clarinet credits include; Airto Moreira, Dudu Pukwana, Jimmy Witherspoon, Elton John, Joan Armatrading, Joe Jackson, REM, Wham, Robert Cray, Loose Tubes and many more.</p>
               </div>
             </div>
 
@@ -101,7 +101,7 @@ export default function Performers() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Henry Armburg-Jennings</h2>
               <div className="space-y-4 text-gray-300">
-                <p>Based in the UK, Henry has worked with Stan Tracy, Peter King and Martin Drew. He's also had his own jazz quartet and been member of the National Youth Jazz Orchestra.</p>
+                <p>Based in the UK, Henry has worked with Stan Tracy, Peter King and Martin Drew. He&apos;s also had his own jazz quartet and been member of the National Youth Jazz Orchestra.</p>
               </div>
             </div>
 
@@ -117,7 +117,7 @@ export default function Performers() {
             <div className="bg-black/30 p-8 rounded-xl border border-teal-900/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-orange-400 mb-4">Linley Hamilton</h2>
               <div className="space-y-4 text-gray-300">
-                <p>Based in Northern Ireland, Linley's credits include sessions with Van Morrison.</p>
+                <p>Based in Northern Ireland, Linley&apos;s credits include sessions with Van Morrison.</p>
                 <p>He has his own jazz quartet and presents a BBC jazz radio show.</p>
               </div>
             </div>

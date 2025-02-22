@@ -14,8 +14,8 @@ export default function MusicPage() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-teal-400">
             Our Music
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Experience the unique sound of 25th Street Band. A fusion of New York's energy with timeless melodies.
+          <p className="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-20">
+            Experience the 25th Street Band&apos;s unique blend of jazz, soul, and rock through our latest releases and timeless classics.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function MusicPage() {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-white">Album Title</h3>
               <p className="text-gray-300">
-                Our latest album featuring 12 original tracks that capture the essence of New York City's diverse musical landscape.
+                Our latest album featuring 12 original tracks that capture the essence of New York City&apos;s diverse musical landscape.
               </p>
               <div className="flex gap-4">
                 <a
@@ -137,6 +137,22 @@ export default function MusicPage() {
           </div>
         </div>
       </section>
+
+      {/* Featured Video */}
+      <div className="mb-20">
+        <h2 className="text-3xl font-bold text-orange-400 mb-8">Latest Release</h2>
+        <div className="aspect-video rounded-xl overflow-hidden shadow-2xl">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/mLyFGeMuVjg"
+            title="25th Street Band - Holding On To Love"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          ></iframe>
+        </div>
+      </div>
     </main>
   )
 } 

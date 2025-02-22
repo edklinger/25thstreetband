@@ -132,6 +132,17 @@ export default function ShowsPage() {
           </a>
         </div>
       </section>
+
+      {/* Additional Content */}
+      <section className="py-20 px-4">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8 text-white">We&apos;ll be back with more shows soon!</h2>
+          <div className="text-gray-300">
+            <p>We&apos;ll be back with more shows soon!</p>
+            <p>Stay tuned for upcoming performances.</p>
+          </div>
+        </div>
+      </section>
     </main>
   )
 } 
