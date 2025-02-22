@@ -28,7 +28,7 @@ export default function Navigation() {
             {/* Logo/Home */}
             <Link href="/" className="hover:opacity-80 transition-opacity">
               <Image
-                src="/25th-street-logo.jpg"
+                src="/25th-long-logo-1@2x.jpg"
                 alt="25th Street Logo"
                 width={150}
                 height={40}

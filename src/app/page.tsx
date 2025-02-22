@@ -19,16 +19,17 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
-        {/* NYC Background Image */}
+        {/* Video Background */}
         <div className="absolute inset-0 w-full h-full">
-          <Image
-            src="/new-york-dark.jpg"
-            alt="New York City Dark"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="absolute inset-0 w-full h-full"
-            priority
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/nyc-timelapse.mp4" type="video/mp4" />
+          </video>
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A192F]/50 via-transparent to-[#0A192F]" />
         </div>
@@ -38,7 +39,7 @@ export default function Home() {
           {/* Logo */}
           <div className="w-full max-w-4xl mx-auto">
             <Image
-              src="/25th-street-logo.jpg"
+              src="/25th-long-logo-1@2x.jpg"
               alt="25th Street Band"
               width={800}
               height={200}
