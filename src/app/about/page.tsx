@@ -123,14 +123,18 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-12 text-white">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-black/30 rounded-xl p-8">
-              <FaEnvelope className="w-8 h-8 text-orange-400 mx-auto mb-4" />
+              <div className="w-8 h-8 text-orange-400 mx-auto mb-4">
+                <FaEnvelope />
+              </div>
               <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
               <a href="mailto:booking@25thstreetband.com" className="text-gray-300 hover:text-white transition-colors">
                 booking@25thstreetband.com
               </a>
             </div>
             <div className="bg-black/30 rounded-xl p-8">
-              <FaPhone className="w-8 h-8 text-orange-400 mx-auto mb-4" />
+              <div className="w-8 h-8 text-orange-400 mx-auto mb-4">
+                <FaPhone />
+              </div>
               <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
               <a href="tel:+1234567890" className="text-gray-300 hover:text-white transition-colors">
                 (123) 456-7890
