@@ -22,7 +22,7 @@ export default function Home() {
         {/* NYC Background Image */}
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/new york dark.jpg"
+            src="/new-york-dark.jpg"
             alt="New York City Dark"
             fill
             style={{ objectFit: 'cover' }}
@@ -89,7 +89,7 @@ export default function Home() {
               <div className="absolute -inset-1 bg-gradient-to-r from-[#D4A017] to-[#FF4500] rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
               <div className="relative h-full rounded-xl overflow-hidden border border-[#2C3E50]">
                 <Image
-                  src="/russ klinger.jpeg"
+                  src="/russ-klinger.jpeg"
                   alt="Russ Klinger"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -193,7 +193,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Joel Smile@2x.png"
+                      src="/joel-smile@2x.png"
                       alt="Joel Kibble"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -228,7 +228,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Jos Final@2x.png"
+                      src="/jos-final@2x.png"
                       alt="Josiah Ruff"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Mornington FINAL@2x.png"
+                      src="/mornington-final@2x.png"
                       alt="Mornington Lockett"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -299,7 +299,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Hus live good@2x.png"
+                      src="/hus-live-good@2x.png"
                       alt="Hussain Jiffry"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -333,7 +333,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Tom Wild@2x.png"
+                      src="/tom-wild@2x.png"
                       alt="Tom Brechtlein"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -367,7 +367,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Bill FINAL@2x.png"
+                      src="/bill-final@2x.png"
                       alt="Bill McBirnie"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -401,7 +401,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Jandira wide@2x.png"
+                      src="/jandira-wide@2x.png"
                       alt="Jandira Silva"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -436,7 +436,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Ann gesture.png"
+                      src="/ann-gesture.png"
                       alt="Ann Bailey"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -471,7 +471,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Bitelli FINAL@2x.png"
+                      src="/bitelli-final@2x.png"
                       alt="David Bitelli"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -505,7 +505,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Henry FINAL.png"
+                      src="/henry-final.png"
                       alt="Henry Armburg-Jennings"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -539,7 +539,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Ollie car.png"
+                      src="/ollie-car.png"
                       alt="Ollie James"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -573,7 +573,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="relative h-full w-full rounded-xl overflow-hidden">
                     <Image
-                      src="/Linley FINAL 1@2x.png"
+                      src="/linley-final-1@2x.png"
                       alt="Linley Hamilton"
                       fill
                       style={{ objectFit: 'cover' }}
