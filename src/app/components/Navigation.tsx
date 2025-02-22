@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaYoutube, FaSpotify, FaInstagram, FaFacebook } from 'react-icons/fa'
+import { FaYoutube, FaSpotify, FaTimes, FaBars } from 'react-icons/fa'
 import MobileMenu from './MobileMenu'
 
 export default function Navigation() {
@@ -62,7 +62,7 @@ export default function Navigation() {
                 href="https://www.youtube.com/@25thstreetband"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
+                className="text-2xl text-gray-300 hover:text-red-600 transition-colors"
               >
                 <FaYoutube />
               </a>
@@ -70,38 +70,19 @@ export default function Navigation() {
                 href="https://open.spotify.com/artist/5ZOSFruOF37CZzX6iQi9tU"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
+                className="text-2xl text-gray-300 hover:text-green-500 transition-colors"
               >
                 <FaSpotify />
-              </a>
-              <a
-                href="https://instagram.com/25thstreetband"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100063657336530"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
-              >
-                <FaFacebook />
               </a>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden">
               <button
-                type="button"
-                className="text-gray-300 hover:text-white focus:outline-none"
                 onClick={() => setIsMobileMenuOpen(true)}
+                className="text-white hover:text-orange-400 transition-colors"
               >
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                <FaBars className="text-2xl" />
               </button>
             </div>
           </div>

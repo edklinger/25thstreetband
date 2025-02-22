@@ -126,18 +126,14 @@ export default function MusicPage() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8 text-white">Listen Everywhere</h2>
           <div className="flex justify-center gap-8">
-            <a
-              href="#"
-              className="text-4xl text-[#FF0000] hover:text-[#FF0000]/80 transition-colors"
-            >
-              <FaYoutube />
-            </a>
-            <a
-              href="#"
-              className="text-4xl text-[#1DB954] hover:text-[#1DB954]/80 transition-colors"
-            >
-              <FaSpotify />
-            </a>
+            <div className="flex items-center justify-center space-x-2 px-8 py-3 bg-gradient-to-r from-[#FF0000] to-[#CC0000] rounded-xl text-white font-medium hover:from-[#CC0000] hover:to-[#FF0000] transition-all transform hover:scale-[1.02] shadow-lg w-full mt-auto">
+              <FaYoutube className="text-2xl" />
+              <span>Watch on YouTube</span>
+            </div>
+            <div className="flex items-center justify-center space-x-2 px-8 py-3 bg-gradient-to-r from-[#1DB954] to-[#169C46] rounded-xl text-white font-medium hover:from-[#169C46] hover:to-[#1DB954] transition-all transform hover:scale-[1.02] shadow-lg w-full mt-auto">
+              <FaSpotify className="text-2xl" />
+              <span>Listen on Spotify</span>
+            </div>
           </div>
         </div>
       </section>
