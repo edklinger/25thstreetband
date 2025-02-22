@@ -122,7 +122,7 @@ export default function ShowsPage() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8 text-white">Stay Updated</h2>
           <p className="text-gray-300 mb-8">
-            Don't miss out on our shows! Sign up for our newsletter to get tour updates and exclusive presale access.
+            Don&apos;t miss out on our shows! Sign up for our newsletter to get tour updates and exclusive presale access.
           </p>
           <a
             href="/#newsletter"

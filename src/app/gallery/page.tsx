@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Navigation from '../components/Navigation'
 import { FaPlay, FaTimes } from 'react-icons/fa'
+import Image from 'next/image'
 
 interface PhotoProps {
   src: string
@@ -118,13 +119,17 @@ export default function GalleryPage() {
             {filteredPhotos.map((photo, index) => (
               <div
                 key={index}
-                className="aspect-square rounded-lg overflow-hidden group cursor-pointer"
+                className="aspect-square relative group cursor-pointer"
               >
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                <div className="absolute inset-0 rounded-lg overflow-hidden">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -143,10 +148,12 @@ export default function GalleryPage() {
                 onClick={() => setSelectedVideo(video.youtubeId)}
               >
                 <div className="aspect-video rounded-lg overflow-hidden relative">
-                  <img
+                  <Image
                     src={video.thumbnail}
                     alt={video.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <FaPlay className="w-12 h-12 text-white" />
