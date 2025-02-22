@@ -1,7 +1,7 @@
 'use client'
 
 import { Fragment } from 'react'
-import { FaYoutube, FaSpotify, FaTimes, FaInstagram, FaFacebook } from 'react-icons/fa'
+import { FaYoutube, FaSpotify, FaInstagram, FaFacebook } from 'react-icons/fa'
 
 interface MobileMenuProps {
   isOpen: boolean
@@ -24,10 +24,23 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div className="flex items-center justify-end p-4">
           <button
             type="button"
-            className="text-gray-300 hover:text-white"
+            className="text-gray-300 hover:text-white p-2"
             onClick={onClose}
           >
-            <FaTimes className="h-6 w-6" />
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
           </button>
         </div>
 
