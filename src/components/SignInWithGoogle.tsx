@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image'
 import { useAuth } from '../lib/hooks/useAuth';
 
 export default function SignInWithGoogle() {
@@ -8,9 +9,15 @@ export default function SignInWithGoogle() {
   return (
     <button
       onClick={signInWithGoogle}
-      className="flex items-center justify-center bg-white text-gray-700 font-semibold py-2 px-4 rounded-full border border-gray-300 hover:bg-gray-100 transition duration-300 ease-in-out"
+      className="flex items-center justify-center gap-2 bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
     >
-      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo" className="w-6 h-6 mr-2" />
+      <Image
+        src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+        alt="Google logo"
+        width={24}
+        height={24}
+        className="w-6 h-6 mr-2"
+      />
       Sign in with Google
     </button>
   );
