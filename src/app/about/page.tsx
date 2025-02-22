@@ -1,8 +1,6 @@
 'use client'
 
 import Navigation from '../components/Navigation'
-import { FaEnvelope, FaPhone } from 'react-icons/fa'
-import { IconType } from 'react-icons'
 import Image from 'next/image'
 import React from 'react'
 
