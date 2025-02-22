@@ -27,7 +27,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             className="text-gray-300 hover:text-white"
             onClick={onClose}
           >
-            {FaTimes({ className: "h-6 w-6" })}
+            <FaTimes className="h-6 w-6" />
           </button>
         </div>
 
@@ -89,7 +89,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
               >
-                {FaYoutube({})}
+                <FaYoutube />
               </a>
               <a
                 href="https://open.spotify.com/artist/5ZOSFruOF37CZzX6iQi9tU"
@@ -97,7 +97,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
               >
-                {FaSpotify({})}
+                <FaSpotify />
               </a>
               <a
                 href="https://instagram.com/25thstreetband"
@@ -105,7 +105,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
               >
-                {FaInstagram({})}
+                <FaInstagram />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=100063657336530"
@@ -113,7 +113,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-300 hover:text-[#FF4500] transition-colors"
               >
-                {FaFacebook({})}
+                <FaFacebook />
               </a>
             </div>
           </div>

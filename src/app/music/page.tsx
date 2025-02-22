@@ -44,14 +44,14 @@ export default function MusicPage() {
                   href="#"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-teal-500 rounded-full text-white hover:from-orange-600 hover:to-teal-600 transition-all transform hover:scale-105"
                 >
-                  {FaPlay({})}
+                  <FaPlay />
                   Play Now
                 </a>
                 <a
                   href="#"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#1DB954] rounded-full text-white hover:bg-[#1ed760] transition-all transform hover:scale-105"
                 >
-                  {FaSpotify({})}
+                  <FaSpotify />
                   Spotify
                 </a>
               </div>
@@ -130,13 +130,13 @@ export default function MusicPage() {
               href="#"
               className="text-4xl text-[#FF0000] hover:text-[#FF0000]/80 transition-colors"
             >
-              {FaYoutube({})}
+              <FaYoutube />
             </a>
             <a
               href="#"
               className="text-4xl text-[#1DB954] hover:text-[#1DB954]/80 transition-colors"
             >
-              {FaSpotify({})}
+              <FaSpotify />
             </a>
           </div>
         </div>

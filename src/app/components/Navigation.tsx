@@ -21,7 +21,7 @@ export default function Navigation() {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0A192F]/90 backdrop-blur-md' : 'bg-transparent'
+        isScrolled ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -32,49 +32,28 @@ export default function Navigation() {
                 alt="25th Street Logo"
                 width={150}
                 height={40}
-                className="h-10 w-auto drop-shadow-[0_0_12px_rgba(212,160,23,0.2)]"
+                className="h-10 w-auto"
                 priority
               />
             </Link>
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <button onClick={() => {
-                const element = document.getElementById('about');
-                const offset = 100; // Offset for the fixed header
-                const elementPosition = element?.getBoundingClientRect().top ?? 0;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }} className="text-[#95A5A6] hover:text-[#D4A017] transition-colors font-montserrat">
+              <Link href="/music" className="text-gray-300 hover:text-white transition-colors">
+                Music
+              </Link>
+              <Link href="/artists" className="text-gray-300 hover:text-white transition-colors">
+                Artists
+              </Link>
+              <Link href="/shows" className="text-gray-300 hover:text-white transition-colors">
+                Shows
+              </Link>
+              <Link href="/gallery" className="text-gray-300 hover:text-white transition-colors">
+                Gallery
+              </Link>
+              <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
                 About
-              </button>
-              <button onClick={() => {
-                const element = document.getElementById('music');
-                const offset = 100; // Offset for the fixed header
-                const elementPosition = element?.getBoundingClientRect().top ?? 0;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }} className="text-[#95A5A6] hover:text-[#D4A017] transition-colors font-montserrat">
-                Our music
-              </button>
-              <button onClick={() => {
-                const element = document.getElementById('performers');
-                const offset = 100; // Offset for the fixed header
-                const elementPosition = element?.getBoundingClientRect().top ?? 0;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }} className="text-[#95A5A6] hover:text-[#D4A017] transition-colors font-montserrat">
-                Performers
-              </button>
+              </Link>
             </div>
 
             {/* Social Links */}
@@ -85,7 +64,7 @@ export default function Navigation() {
                 rel="noopener noreferrer"
                 className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
               >
-                {FaYoutube({})}
+                <FaYoutube />
               </a>
               <a
                 href="https://open.spotify.com/artist/5ZOSFruOF37CZzX6iQi9tU"
@@ -93,7 +72,7 @@ export default function Navigation() {
                 rel="noopener noreferrer"
                 className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
               >
-                {FaSpotify({})}
+                <FaSpotify />
               </a>
               <a
                 href="https://instagram.com/25thstreetband"
@@ -101,7 +80,7 @@ export default function Navigation() {
                 rel="noopener noreferrer"
                 className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
               >
-                {FaInstagram({})}
+                <FaInstagram />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=100063657336530"
@@ -109,7 +88,7 @@ export default function Navigation() {
                 rel="noopener noreferrer"
                 className="text-xl text-[#95A5A6] hover:text-[#FF4500] transition-colors"
               >
-                {FaFacebook({})}
+                <FaFacebook />
               </a>
             </div>
 
@@ -117,7 +96,7 @@ export default function Navigation() {
             <div className="md:hidden">
               <button
                 type="button"
-                className="text-[#95A5A6] hover:text-[#D4A017] focus:outline-none"
+                className="text-gray-300 hover:text-white focus:outline-none"
                 onClick={() => setIsMobileMenuOpen(true)}
               >
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
