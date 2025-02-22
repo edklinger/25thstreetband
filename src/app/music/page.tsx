@@ -2,6 +2,7 @@
 
 import Navigation from '../components/Navigation'
 import { FaPlay, FaSpotify, FaYoutube } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function MusicPage() {
   return (
@@ -25,11 +26,12 @@ export default function MusicPage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center text-white">Latest Release</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden">
-              <img
+            <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden relative">
+              <Image
                 src="/album-cover-placeholder.jpg"
                 alt="Latest Album"
-                className="w-full h-full object-cover"
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </div>
             <div className="space-y-6">
@@ -102,11 +104,13 @@ export default function MusicPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Album 1 */}
             <div className="group cursor-pointer">
-              <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden mb-4">
-                <img
+              <div className="aspect-square bg-gradient-to-br from-orange-500/10 to-teal-500/10 rounded-lg overflow-hidden mb-4 relative">
+                <Image
                   src="/album1-placeholder.jpg"
                   alt="Album 1"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <h3 className="text-lg font-bold text-white">Album Title 1</h3>

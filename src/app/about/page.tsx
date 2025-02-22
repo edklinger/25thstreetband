@@ -2,6 +2,7 @@
 
 import Navigation from '../components/Navigation'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import Image from 'next/image'
 
 interface MilestoneProps {
   year: string
@@ -76,11 +77,12 @@ export default function AboutPage() {
                 <p>Since 2014 Russ Klinger has been solo at the centre of the project, writing, playing and producing for the 25th Street Band.</p>
               </div>
             </div>
-            <div className="aspect-square rounded-lg overflow-hidden">
-              <img
+            <div className="aspect-square rounded-lg overflow-hidden relative">
+              <Image
                 src="/about-image.jpg"
                 alt="25th Street Band Story"
-                className="w-full h-full object-cover"
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </div>
           </div>
