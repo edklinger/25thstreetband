@@ -19,7 +19,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "firebasestorage.googleapis.com",
+        hostname: "www.gstatic.com",
       },
     ],
     dangerouslyAllowSVG: true,
