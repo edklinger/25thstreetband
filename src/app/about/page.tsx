@@ -125,19 +125,13 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-12 text-white">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-black/30 rounded-xl p-8">
-              <div className="text-orange-400 mx-auto mb-4 flex justify-center">
-                {React.createElement(FaEnvelope, { size: 32 })}
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Email Us</h3>
               <a href="mailto:booking@25thstreetband.com" className="text-gray-300 hover:text-white transition-colors">
                 booking@25thstreetband.com
               </a>
             </div>
             <div className="bg-black/30 rounded-xl p-8">
-              <div className="text-orange-400 mx-auto mb-4 flex justify-center">
-                {React.createElement(FaPhone, { size: 32 })}
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Call Us</h3>
               <a href="tel:+1234567890" className="text-gray-300 hover:text-white transition-colors">
                 (123) 456-7890
               </a>
