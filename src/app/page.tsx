@@ -19,18 +19,20 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
         {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
           <video
             autoPlay
             loop
             muted
             playsInline
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover"
+            style={{ filter: 'brightness(1.1)' }}
           >
             <source src="/nyc-timelapse.mp4" type="video/mp4" />
           </video>
-          {/* Overlay with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0A192F]/40 via-[#0A192F]/60 to-[#0A192F]" />
+          {/* Overlay with lighter gradient */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A192F]/10 via-[#0A192F]/20 to-[#0A192F]/90" />
         </div>
         
         {/* Content */}
@@ -56,11 +58,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#FF4500]/5 mix-blend-overlay" />
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-2xl font-semibold tracking-[0.2em] font-montserrat">
-            <span className="text-[#0A5960] drop-shadow-[0_0_12px_rgba(10,89,96,0.5)]">Jazz Funk</span>
-            <span className="text-[#CCD6D7] hidden md:block">•</span>
-            <span className="text-[#0A5960] drop-shadow-[0_0_12px_rgba(10,89,96,0.5)]">Jazz Soul</span>
-            <span className="text-[#CCD6D7] hidden md:block">•</span>
-            <span className="text-[#0A5960] drop-shadow-[0_0_12px_rgba(10,89,96,0.5)]">West Coast Jazz</span>
+            <span className="text-[#11EBD3] drop-shadow-[0_0_15px_rgba(17,235,211,0.9)] hover:text-[#11EBD3]/90 transition-all duration-300">Jazz Funk</span>
+            <span className="text-[#CCD6D7] hidden md:block opacity-50">•</span>
+            <span className="text-[#11EBD3] drop-shadow-[0_0_15px_rgba(17,235,211,0.9)] hover:text-[#11EBD3]/90 transition-all duration-300">Jazz Soul</span>
+            <span className="text-[#CCD6D7] hidden md:block opacity-50">•</span>
+            <span className="text-[#11EBD3] drop-shadow-[0_0_15px_rgba(17,235,211,0.9)] hover:text-[#11EBD3]/90 transition-all duration-300">West Coast Jazz</span>
           </div>
         </div>
       </section>

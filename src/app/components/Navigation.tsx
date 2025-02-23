@@ -58,7 +58,7 @@ export default function Navigation() {
                     behavior: 'smooth'
                   });
                 }} className="text-white font-semibold hover:text-[#D4A017] transition-colors font-montserrat">
-                  About
+                  About Us
                 </button>
                 <button onClick={() => {
                   const element = document.getElementById('music');
@@ -82,7 +82,7 @@ export default function Navigation() {
                     behavior: 'smooth'
                   });
                 }} className="text-white font-semibold hover:text-[#D4A017] transition-colors font-montserrat">
-                  Performers
+                  Our performers
                 </button>
               </div>
             </div>
