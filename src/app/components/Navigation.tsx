@@ -8,12 +8,21 @@ import MobileMenu from './MobileMenu'
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isHeroVisible, setIsHeroVisible] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
+      // Check if we've scrolled past half of the hero section
+      const heroSection = document.querySelector('section:first-of-type')
+      if (heroSection) {
+        const heroHeight = heroSection.clientHeight
+        const halfHeight = heroHeight / 2
+        setIsHeroVisible(window.scrollY < halfHeight)
+      }
     }
     window.addEventListener('scroll', handleScroll)
+    handleScroll() // Call immediately to set initial state
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -23,9 +32,9 @@ export default function Navigation() {
         isScrolled ? 'bg-[#0A192F]/90 backdrop-blur-md' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center h-16">
             {/* Logo/Home */}
-            <Link href="/" className="hover:opacity-80 transition-opacity">
+            <Link href="/" className={`absolute left-4 hover:opacity-80 transition-all duration-300 ${isHeroVisible ? 'opacity-0' : 'opacity-100'}`}>
               <Image
                 src="/25th-long-logo-1@2x.jpg"
                 alt="25th Street Logo"
@@ -36,44 +45,46 @@ export default function Navigation() {
               />
             </Link>
 
-            {/* Navigation Links */}
-            <div className="hidden md:flex items-center space-x-8">
-              <button onClick={() => {
-                const element = document.getElementById('about');
-                const offset = 100; // Offset for the fixed header
-                const elementPosition = element?.getBoundingClientRect().top ?? 0;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }} className="text-[#95A5A6] hover:text-[#D4A017] transition-colors font-montserrat">
-                About
-              </button>
-              <button onClick={() => {
-                const element = document.getElementById('music');
-                const offset = 100; // Offset for the fixed header
-                const elementPosition = element?.getBoundingClientRect().top ?? 0;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }} className="text-[#95A5A6] hover:text-[#D4A017] transition-colors font-montserrat">
-                Our music
-              </button>
-              <button onClick={() => {
-                const element = document.getElementById('performers');
-                const offset = 100; // Offset for the fixed header
-                const elementPosition = element?.getBoundingClientRect().top ?? 0;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }} className="text-[#95A5A6] hover:text-[#D4A017] transition-colors font-montserrat">
-                Performers
-              </button>
+            {/* Navigation Links - Centered accounting for social links width */}
+            <div className="flex-1 flex justify-center items-center translate-x-4">
+              <div className="flex items-center space-x-12 max-w-xl mx-auto">
+                <button onClick={() => {
+                  const element = document.getElementById('about');
+                  const offset = 100;
+                  const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                  const offsetPosition = elementPosition + window.pageYOffset - offset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                }} className="text-white font-semibold hover:text-[#D4A017] transition-colors font-montserrat">
+                  About
+                </button>
+                <button onClick={() => {
+                  const element = document.getElementById('music');
+                  const offset = 100;
+                  const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                  const offsetPosition = elementPosition + window.pageYOffset - offset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                }} className="text-white font-semibold hover:text-[#D4A017] transition-colors font-montserrat">
+                  Our music
+                </button>
+                <button onClick={() => {
+                  const element = document.getElementById('performers');
+                  const offset = 100;
+                  const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                  const offsetPosition = elementPosition + window.pageYOffset - offset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                }} className="text-white font-semibold hover:text-[#D4A017] transition-colors font-montserrat">
+                  Performers
+                </button>
+              </div>
             </div>
 
             {/* Social Links */}
