@@ -45,8 +45,8 @@ export default function Navigation() {
               />
             </Link>
 
-            {/* Navigation Links - Centered accounting for social links width */}
-            <div className="flex-1 flex justify-center items-center translate-x-4">
+            {/* Navigation Links - Hidden on mobile */}
+            <div className="hidden md:flex flex-1 justify-center items-center translate-x-4">
               <div className="flex items-center space-x-12 max-w-xl mx-auto">
                 <button onClick={() => {
                   const element = document.getElementById('about');
@@ -86,6 +86,9 @@ export default function Navigation() {
                 </button>
               </div>
             </div>
+
+            {/* Spacer for mobile layout */}
+            <div className="flex-1 md:hidden"></div>
 
             {/* Social Links */}
             <div className="hidden md:flex items-center space-x-4">
